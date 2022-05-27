@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd"
+        objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+    <changeSet id="1" author="reportbug">
+        <sql>
+            insert into ENTITY_WITH_ATTRIBUTES
+            (ID, FIRST_ATTRIBUTE, SECOND_ATTRIBUTE, THIRD_ATTRIBUTE)
+            values ('1537f2a7-706e-1feb-f343-411a871c2936', 'first value', 'second value', null);
+        </sql>
+    </changeSet>
+    <changeSet id="2" author="reportbug">
+        <sql>
+            insert into ENTITY_WITH_ATTRIBUTES
+                (ID, FIRST_ATTRIBUTE, SECOND_ATTRIBUTE, THIRD_ATTRIBUTE)
+            values ('ccea569b-8a5b-81c6-8355-2b19f5e4fef2', null, null, null);
+        </sql>
+    </changeSet>
+</databaseChangeLog>
